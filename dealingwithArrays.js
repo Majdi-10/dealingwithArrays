@@ -27,7 +27,7 @@ var myArray = ["cat","dog","dragon"]
   }
 
   function lastElement(array){
-  	return array[array.length-1]
+  	return array[array.length-1];
   }
 
   function getNthElement(array, number){
@@ -39,50 +39,50 @@ var myArray = ["cat","dog","dragon"]
   }
 
   function pop(array){
-  	return array.pop()
+  	return array.pop();
   }
 
   function unshift(array, element){
-  	return array.unshift(element)
+  	return array.unshift(element);
   }
 
   function shift(array){
-  	return array.shift()
+  	return array.shift();
   }
 
   function reassignLast(array, element){
-  	return array[array.length-1]=element
+  	return array[array.length-1]=element;
   }
 
   function reassignNthElement(array, index, element){
-  	return array[index]=element
+  	return array[index]=element;
   }
 
   function indexOf(array, element){
-  	return array.indexOf(element)
+  	return array.indexOf(element);
   }
 
   function addElement(array, index, element){
-  	return array.splice(index,0,element)
+  	return array.splice(index,0,element);
   }
 
   function removeElement(array, index, element){
-  	return array.splice(index,1,element)
+  	return array.splice(index,1,element);
   }
 
   function concatArrays(array, array){
-  	return array.concat(array)
+  	return array.concat(array);
   }
 
   function concatThreeArrays(array,array,array){
-  	return array.concat(array,array)
+  	return array.concat(array,array);
   }
 
-   var arry = [1,2,3,4,5,6,7,8,9]
+   var arry = [1,2,3,4,5,6,7,8,9];
 
    function arrayFor(array){
    	for(var i = 0; i<array.length;i++){
-   		console.log(array[i])
+   		console.log(array[i]);
    	}
    }
 
@@ -95,26 +95,26 @@ var myArray = ["cat","dog","dragon"]
    }
 
    function sum(array){
-   	var result =0
+   	var result =0;
    	for( var i = 0; i< array.length;i++){
-   		 result=result+array[i]
+   		 result=result+array[i];
    	}
    	return result;
    }
     function sumEveryOther(array){
     	var result =0;
     	for(var i =0; i<array.length;i=i+2){
-    		result=result+array[i]
+    		result=result+array[i];
     	}
-    	return result
+    	return result;
     }
 
     function sumStartAt(array,index){
-    	var result =0
+    	var result =0;
     	for(var i = index; i<array.length;i++){
     		result=result+array[i]
     	}
-    	return result
+    	return result;
 
     }
 
@@ -137,7 +137,7 @@ var myArray = ["cat","dog","dragon"]
     	for(var i = array.length-2 ; i>=0 ;i--){
     		result=result-array[i]
     	}
-    	return result
+    	return result;
     }
 
     function product(array){
@@ -145,7 +145,7 @@ var myArray = ["cat","dog","dragon"]
     	for(var i = 0;i<array.length;i++){
     		result = result * array[i]
     	}
-    	return result
+    	return result;
     }
 
     function average(array){
@@ -153,7 +153,7 @@ var myArray = ["cat","dog","dragon"]
     	for(var i = 0;i<array.length;i++){
     		result =(result+array[i])/array.length
     	}
-    	return result
+    	return result;
     }
 
     function square(array){
@@ -162,17 +162,17 @@ var myArray = ["cat","dog","dragon"]
     	for(var i = 0;i<array.length;i++){
     		arr.push(array[i]**2)
     	}
-    	return arr
+    	return arr;
     }
     function isArray(array){
-    	return Array.isArray(array)
+    	return Array.isArray(array);
     }
    
     function shortestString(array){
     	var short = array[0].length;
     	for(var i = 0;i<array.length;i++){
     		if(short>array[i].length){
-    			short=array[i].length
+    			short=array[i].length;
     		}
     	}
     	return short;
@@ -182,7 +182,7 @@ var myArray = ["cat","dog","dragon"]
     	var long=array[0].length;
     	for(var i = 0; i<array.length; i++){
     		if(long<array[i].length){
-    			long=array[i].length
+    			long=array[i].length;
     		}
 
     	}
@@ -193,7 +193,7 @@ var myArray = ["cat","dog","dragon"]
     	var minn =array[0];
     	for(var i=0;i<array.length;i++){
     		if(minn>array[i]){
-    	    minn=array[i]
+    	    minn=array[i];
     		}
     	}
     	return minn;
@@ -202,11 +202,11 @@ var myArray = ["cat","dog","dragon"]
     	var maxx = array[0];
     	for(var i=0;i<array.length;i++){
     		if(maxx<array[i]){
-    			maxx=array[i]
+    			maxx=array[i];
 
     		}
     	}
-    	return maxx
+    	return maxx;
     }
 
     function shortestLongest(array){
@@ -214,10 +214,10 @@ var myArray = ["cat","dog","dragon"]
     	var shlo = array[0];
     	for(var i =0;i<array.length;i++){
     		if(shlo>array[i]&&shlo<array[i]){
-    			shlo=array[i]
-    			arro.push(shlo)
+    			shlo=array[i];
+    			arro.push(shlo);
     		}
 
     	}
-    	return arro
+    	return arro;
     }
